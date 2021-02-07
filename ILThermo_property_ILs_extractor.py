@@ -86,9 +86,6 @@ def directory():
 label2 = Label(root, text="Browse saving directory")
 label2.pack()
 
-#entry2 = Entry(root, width=50)
-#entry2.pack()
-
 button_calc2 = Button(root, text="Browse", command=directory)
 button_calc2.pack()
 
@@ -222,9 +219,6 @@ def metaDataStr(datObj):
     out += 'ILT2 setid: {0:s}\n'.format(datObj.setid)
     return out
 
-#def Mbox(title, text, style):
-#    return ctypes.windll.user32.MessageBoxW(0, text, title, style)
-
 def writeReport(listOfDataSets, reportDir=None, resDOI=False, verbose=False):
     global newReportDir
     dtnow = datetime.datetime.now()
@@ -242,15 +236,10 @@ def writeReport(listOfDataSets, reportDir=None, resDOI=False, verbose=False):
     rep = open(newReportDir + '/report.dat', 'w')
     rep.write(dtnow.strftime("%d. %b. %Y (%H_%M_%S)") + '\n')
     rep.write('-' * 24 + '\n')
-    #if len(listOfDataSets) == 0:
-    #    Mbox('INFORMATION', 'zero results in query', 1)
-    #else:
-    #    Mbox('INFORMATION', '(%d) results in query' % len(listOfDataSets) , 1)
     file_names=[]
     const=0
     for i in range(0, len(listOfDataSets)):
         dataSet = listOfDataSets[i]
-        #dataFile = 'ref{0:d}.dat'.format(i)
         original_string = str(dataSet.listOfComp)
         characters_to_remove = "["
         new_string = original_string
@@ -349,11 +338,9 @@ button9.pack()
 def smiles():
     import csv
     import subprocess
-    import os
-    
-    #subprocess.call(["sed -i -e '1s/ /_/g; 1s/;/,/g ; s/__/ /g; s/#_//g' {}/*.txt".format(newReportDir)], shell=True)
-    
+    import os  
     import os, fnmatch
+    
     def findReplace(directory, find, replace, filePattern):
         for path, dirs, files in os.walk(os.path.abspath(directory)):
             for filename in fnmatch.filter(files, filePattern):
