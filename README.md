@@ -11,12 +11,14 @@ Associated Lab in Sustainable Chemistry (LAQV-REQUIMTE)
 
 NOVA University of Lisbon - Cheminformatics Lab
 
-ILTherm Database:
+ILThermo Database:
 
 - Kazakov, A.; Magee, J.W.; Chirico, R.D.; Paulechka, E.; Diky, V.; Muzny, C.D.; Kroenlein, K.; Frenkel, M. “NIST Standard Reference Database 147: NIST Ionic Liquids Database - (ILThermo)”, Version 2.0, National Institute of Standards and Technology, Gaithersburg MD, 20899, http://ilthermo.boulder.nist.gov.
 - Dong, Q.; Muzny, C.D.; Kazakov, A.; Diky, V.; Magee, J.W.; Widegren, J.A.; Chirico, R.D.; Marsh, K.N.; Frenkel, M., “ILThermo: A Free-Access Web Database for Thermodynamic Properties of Ionic Liquids.” J. Chem. Eng. Data, 2007, 52(4), 1151-1159, doi: 10.1021/je700171f.
 
 pyILT2 package available at: https://pypi.org/project/pyilt2/
+
+OPSIN software available at: https://opsin.ch.cam.ac.uk/
 
 ## Reference:
 
