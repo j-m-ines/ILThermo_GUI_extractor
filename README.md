@@ -1,6 +1,8 @@
 # ILThermo_GUI_extractor
 Graphic User Interface (GUI) that extracts data from ILThermo Database and encodes chemical structure (SMILES notation) to the final dataset.
 
+The opsin java application should be placed in the root directory for proper execution of the GUI.
+
 ## Corresponding Authors:
 
 João Miguel Inês (j.ines@fct.unl.pt)
